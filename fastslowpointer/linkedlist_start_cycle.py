@@ -9,15 +9,15 @@
 from fastslowpointer.Node import Node
 
 
-def find_cycle_start(root):
-    slow = root
-    fast = root
+def find_cycle_start(head):
+    slow = head
+    fast = head
     while fast is not None and fast.next is not None:
         slow = slow.next
         fast = fast.next.next
 
         if slow == fast:
-            new_slow = root
+            new_slow = head
             while new_slow != slow:
                 slow = slow.next
                 new_slow = new_slow.next
