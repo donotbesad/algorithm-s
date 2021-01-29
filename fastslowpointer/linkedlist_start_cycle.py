@@ -6,7 +6,7 @@
 # Time Complexity: O(n)
 # Space Complexity: O(1)
 # -------------------------------------------------------------
-from fastslowpointer.Node import Node
+from utils import Node
 
 
 def find_cycle_start(head):

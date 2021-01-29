@@ -7,7 +7,7 @@
 # Time Complexity: O(n)
 # Space Complexity: O(1)
 # -------------------------------------------------------------
-from fastslowpointer.Node import Node
+from utils import Node
 
 
 def reorder(head):
