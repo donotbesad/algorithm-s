@@ -9,3 +9,9 @@ class Node:
             print(str(temp.value) + " ", end='')
             temp = temp.next
         print()
+
+
+class TreeNode:
+    def __init__(self, val):
+        self.val = val
+        self.left, self.right = None, None
