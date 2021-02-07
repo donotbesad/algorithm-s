@@ -27,10 +27,10 @@ def has_path_iterative(root, sum):
         curr, val = stack.pop()
         if not curr.left and not curr.right and val == sum:
             return True
-        if curr.left:
-            stack.append((curr.left, val + curr.left.val))
         if curr.right:
             stack.append((curr.right, val + curr.right.val))
+        if curr.left:
+            stack.append((curr.left, val + curr.left.val))
     return False
 
 
