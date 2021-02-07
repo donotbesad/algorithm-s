@@ -11,6 +11,9 @@ from collections import deque
 
 
 def find_successor(root, key):
+    if not root:
+        return None
+
     que = deque()
     que.append(root)
     while que:
